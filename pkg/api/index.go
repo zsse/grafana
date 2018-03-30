@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/grafana/grafana/pkg/api/dtos"
-	"github.com/grafana/grafana/pkg/bus"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/plugins"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/rkrikbaev/grafana/pkg/api/dtos"
+	"github.com/rkrikbaev/grafana/pkg/bus"
+	m "github.com/rkrikbaev/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/plugins"
+	"github.com/rkrikbaev/grafana/pkg/setting"
 )
 
 func setIndexViewData(c *m.ReqContext) (*dtos.IndexViewData, error) {
@@ -290,8 +290,8 @@ func setIndexViewData(c *m.ReqContext) (*dtos.IndexViewData, error) {
 		HideFromMenu: true,
 		Children: []*dtos.NavLink{
 			{Text: "Keyboard shortcuts", Url: "/shortcuts", Icon: "fa fa-fw fa-keyboard-o", Target: "_self"},
-			{Text: "Community site", Url: "http://community.grafana.com", Icon: "fa fa-fw fa-comment", Target: "_blank"},
-			{Text: "Documentation", Url: "http://docs.grafana.org", Icon: "fa fa-fw fa-file", Target: "_blank"},
+			{Text: "Community site", Url: "http://community.rkrikbaev.com", Icon: "fa fa-fw fa-comment", Target: "_blank"},
+			{Text: "Documentation", Url: "http://docs.rkrikbaev.org", Icon: "fa fa-fw fa-file", Target: "_blank"},
 		},
 	})
 

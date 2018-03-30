@@ -3,8 +3,8 @@ package plugins
 import (
 	"log"
 
-	glog "github.com/grafana/grafana/pkg/log"
 	hclog "github.com/hashicorp/go-hclog"
+	glog "github.com/rkrikbaev/grafana/pkg/log"
 )
 
 type LogWrapper struct {

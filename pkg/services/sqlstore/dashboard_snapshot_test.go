@@ -7,9 +7,9 @@ import (
 	"github.com/go-xorm/xorm"
 	. "github.com/smartystreets/goconvey/convey"
 
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/rkrikbaev/grafana/pkg/components/simplejson"
+	m "github.com/rkrikbaev/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/setting"
 )
 
 func TestDashboardSnapshotDBAccess(t *testing.T) {

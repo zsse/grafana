@@ -14,11 +14,11 @@ import (
 
 	"strings"
 
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/middleware"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/rkrikbaev/grafana/pkg/log"
+	"github.com/rkrikbaev/grafana/pkg/middleware"
+	"github.com/rkrikbaev/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/setting"
+	"github.com/rkrikbaev/grafana/pkg/util"
 )
 
 type RenderOpts struct {

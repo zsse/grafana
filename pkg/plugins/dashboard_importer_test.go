@@ -5,10 +5,10 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/dashboards"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/rkrikbaev/grafana/pkg/components/simplejson"
+	m "github.com/rkrikbaev/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/services/dashboards"
+	"github.com/rkrikbaev/grafana/pkg/setting"
 	. "github.com/smartystreets/goconvey/convey"
 	"gopkg.in/ini.v1"
 )

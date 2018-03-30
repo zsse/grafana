@@ -1,9 +1,9 @@
 package notifiers
 
 import (
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/alerting"
+	"github.com/rkrikbaev/grafana/pkg/components/simplejson"
+	m "github.com/rkrikbaev/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/services/alerting"
 )
 
 type NotifierBase struct {

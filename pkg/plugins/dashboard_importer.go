@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/dashboards"
+	"github.com/rkrikbaev/grafana/pkg/bus"
+	"github.com/rkrikbaev/grafana/pkg/components/simplejson"
+	m "github.com/rkrikbaev/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/services/dashboards"
 )
 
 type ImportDashboardCommand struct {

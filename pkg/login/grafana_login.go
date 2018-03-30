@@ -3,9 +3,9 @@ package login
 import (
 	"crypto/subtle"
 
-	"github.com/grafana/grafana/pkg/bus"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/rkrikbaev/grafana/pkg/bus"
+	m "github.com/rkrikbaev/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/util"
 )
 
 var validatePassword = func(providedPassword string, userPassword string, userSalt string) error {

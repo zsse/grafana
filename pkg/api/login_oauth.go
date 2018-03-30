@@ -14,14 +14,14 @@ import (
 
 	"golang.org/x/oauth2"
 
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/metrics"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/quota"
-	"github.com/grafana/grafana/pkg/services/session"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/social"
+	"github.com/rkrikbaev/grafana/pkg/bus"
+	"github.com/rkrikbaev/grafana/pkg/log"
+	"github.com/rkrikbaev/grafana/pkg/metrics"
+	m "github.com/rkrikbaev/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/services/quota"
+	"github.com/rkrikbaev/grafana/pkg/services/session"
+	"github.com/rkrikbaev/grafana/pkg/setting"
+	"github.com/rkrikbaev/grafana/pkg/social"
 )
 
 var (
@@ -153,7 +153,7 @@ func OAuthLogin(ctx *m.ReqContext) {
 		return
 	}
 
-	// validate that the email is allowed to login to grafana
+	// validate that the email is allowed to login to rkrikbaev
 	if !connect.IsEmailAllowed(userInfo.Email) {
 		redirectWithError(ctx, ErrEmailNotAllowed)
 		return

@@ -5,11 +5,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/grafana/grafana/pkg/components/null"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/tsdb"
 	"github.com/grafana/grafana_plugin_model/go/datasource"
+	"github.com/rkrikbaev/grafana/pkg/components/null"
+	"github.com/rkrikbaev/grafana/pkg/log"
+	"github.com/rkrikbaev/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/tsdb"
 )
 
 func NewDatasourcePluginWrapper(log log.Logger, plugin datasource.DatasourcePlugin) *DatasourcePluginWrapper {

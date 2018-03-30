@@ -11,24 +11,24 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/grafana/grafana/pkg/services/provisioning"
+	"github.com/rkrikbaev/grafana/pkg/services/provisioning"
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/grafana/grafana/pkg/api"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/login"
-	"github.com/grafana/grafana/pkg/metrics"
-	"github.com/grafana/grafana/pkg/plugins"
-	"github.com/grafana/grafana/pkg/services/alerting"
-	"github.com/grafana/grafana/pkg/services/cleanup"
-	"github.com/grafana/grafana/pkg/services/notifications"
-	"github.com/grafana/grafana/pkg/services/search"
-	"github.com/grafana/grafana/pkg/services/sqlstore"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/rkrikbaev/grafana/pkg/api"
+	"github.com/rkrikbaev/grafana/pkg/log"
+	"github.com/rkrikbaev/grafana/pkg/login"
+	"github.com/rkrikbaev/grafana/pkg/metrics"
+	"github.com/rkrikbaev/grafana/pkg/plugins"
+	"github.com/rkrikbaev/grafana/pkg/services/alerting"
+	"github.com/rkrikbaev/grafana/pkg/services/cleanup"
+	"github.com/rkrikbaev/grafana/pkg/services/notifications"
+	"github.com/rkrikbaev/grafana/pkg/services/search"
+	"github.com/rkrikbaev/grafana/pkg/services/sqlstore"
+	"github.com/rkrikbaev/grafana/pkg/setting"
 
-	"github.com/grafana/grafana/pkg/social"
-	"github.com/grafana/grafana/pkg/tracing"
+	"github.com/rkrikbaev/grafana/pkg/social"
+	"github.com/rkrikbaev/grafana/pkg/tracing"
 )
 
 func NewGrafanaServer() *GrafanaServerImpl {

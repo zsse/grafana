@@ -5,14 +5,14 @@ import (
 
 	"gopkg.in/macaron.v1"
 
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/components/apikeygen"
-	"github.com/grafana/grafana/pkg/log"
-	l "github.com/grafana/grafana/pkg/login"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/session"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/rkrikbaev/grafana/pkg/bus"
+	"github.com/rkrikbaev/grafana/pkg/components/apikeygen"
+	"github.com/rkrikbaev/grafana/pkg/log"
+	l "github.com/rkrikbaev/grafana/pkg/login"
+	m "github.com/rkrikbaev/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/services/session"
+	"github.com/rkrikbaev/grafana/pkg/setting"
+	"github.com/rkrikbaev/grafana/pkg/util"
 )
 
 func GetContextHandler() macaron.Handler {

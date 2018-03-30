@@ -7,12 +7,12 @@ import (
 	"net/url"
 	"time"
 
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/util"
+	m "github.com/rkrikbaev/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/setting"
+	"github.com/rkrikbaev/grafana/pkg/util"
 )
 
-var grafanaComProxyTransport = &http.Transport{
+var rkrikbaevComProxyTransport = &http.Transport{
 	Proxy: http.ProxyFromEnvironment,
 	Dial: (&net.Dialer{
 		Timeout:   30 * time.Second,
@@ -44,7 +44,7 @@ func ReverseProxyGnetReq(proxyPath string) *httputil.ReverseProxy {
 func ProxyGnetRequest(c *m.ReqContext) {
 	proxyPath := c.Params("*")
 	proxy := ReverseProxyGnetReq(proxyPath)
-	proxy.Transport = grafanaComProxyTransport
+	proxy.Transport = rkrikbaevComProxyTransport
 	proxy.ServeHTTP(c.Resp, c.Req.Request)
 	c.Resp.Header().Del("Set-Cookie")
 }

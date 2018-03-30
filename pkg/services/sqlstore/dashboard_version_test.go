@@ -6,9 +6,9 @@ import (
 
 	. "github.com/smartystreets/goconvey/convey"
 
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/rkrikbaev/grafana/pkg/components/simplejson"
+	m "github.com/rkrikbaev/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/setting"
 )
 
 func updateTestDashboard(dashboard *m.Dashboard, data map[string]interface{}) {

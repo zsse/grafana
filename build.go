@@ -287,7 +287,7 @@ func createPackage(options linuxPackageOptions) {
 		"--vendor", "Grafana",
 		"--url", "https://grafana.com",
 		"--license", "\"Apache 2.0\"",
-		"--maintainer", "contact@grafana.com",
+		"--maintainer", "admin@localhost.com",
 		"--config-files", options.initdScriptFilePath,
 		"--config-files", options.etcDefaultFilePath,
 		"--config-files", options.systemdServiceFilePath,
@@ -437,7 +437,7 @@ func rmr(paths ...string) {
 func clean() {
 	rmr("dist")
 	rmr("tmp")
-	rmr(filepath.Join(os.Getenv("GOPATH"), fmt.Sprintf("pkg/%s_%s/github.com/grafana", goos, goarch)))
+	rmr(filepath.Join(os.Getenv("GOPATH"), fmt.Sprintf("pkg/%s_%s/github.com/", goos, goarch)))
 }
 
 func setBuildEnv() {

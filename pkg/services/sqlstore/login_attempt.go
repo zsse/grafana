@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/grafana/grafana/pkg/bus"
-	m "github.com/grafana/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/bus"
+	m "github.com/rkrikbaev/grafana/pkg/models"
 )
 
 var getTimeNow = time.Now

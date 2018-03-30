@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/grafana/grafana/pkg/tsdb"
+	"github.com/rkrikbaev/grafana/pkg/tsdb"
 )
 
 //const rsString = `(?:"([^"]*)")`;

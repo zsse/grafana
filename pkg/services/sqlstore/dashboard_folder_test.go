@@ -5,8 +5,8 @@ import (
 
 	. "github.com/smartystreets/goconvey/convey"
 
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/search"
+	m "github.com/rkrikbaev/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/services/search"
 )
 
 func TestDashboardFolderDataAccess(t *testing.T) {
