@@ -3,12 +3,12 @@ package sqlstore
 import (
 	"testing"
 
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/services/dashboards"
-	"github.com/grafana/grafana/pkg/services/guardian"
+	"github.com/rkrikbaev/grafana/pkg/components/simplejson"
+	"github.com/rkrikbaev/grafana/pkg/services/dashboards"
+	"github.com/rkrikbaev/grafana/pkg/services/guardian"
 
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/bus"
+	"github.com/rkrikbaev/grafana/pkg/models"
 
 	. "github.com/smartystreets/goconvey/convey"
 )

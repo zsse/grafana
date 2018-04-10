@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/grafana/grafana/pkg/components/simplejson"
+	"github.com/rkrikbaev/grafana/pkg/components/simplejson"
 
-	m "github.com/grafana/grafana/pkg/models"
+	m "github.com/rkrikbaev/grafana/pkg/models"
 )
 
 type Rule struct {

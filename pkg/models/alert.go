@@ -5,7 +5,7 @@ import (
 
 	"fmt"
 
-	"github.com/grafana/grafana/pkg/components/simplejson"
+	"github.com/rkrikbaev/grafana/pkg/components/simplejson"
 )
 
 type AlertStateType string

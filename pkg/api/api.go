@@ -2,10 +2,10 @@ package api
 
 import (
 	"github.com/go-macaron/binding"
-	"github.com/grafana/grafana/pkg/api/avatar"
-	"github.com/grafana/grafana/pkg/api/dtos"
-	"github.com/grafana/grafana/pkg/middleware"
-	m "github.com/grafana/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/api/avatar"
+	"github.com/rkrikbaev/grafana/pkg/api/dtos"
+	"github.com/rkrikbaev/grafana/pkg/middleware"
+	m "github.com/rkrikbaev/grafana/pkg/models"
 )
 
 // Register adds http routes
@@ -368,7 +368,7 @@ func (hs *HTTPServer) registerRoutes() {
 	// rendering
 	r.Get("/render/*", reqSignedIn, RenderToPng)
 
-	// grafana.net proxy
+	// rkrikbaev.net proxy
 	r.Any("/api/gnet/*", reqSignedIn, ProxyGnetRequest)
 
 	// Gravatar service.

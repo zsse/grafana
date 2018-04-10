@@ -9,7 +9,7 @@ import (
 	"net/mail"
 	"regexp"
 
-	"github.com/grafana/grafana/pkg/models"
+	"github.com/rkrikbaev/grafana/pkg/models"
 
 	"golang.org/x/oauth2"
 )

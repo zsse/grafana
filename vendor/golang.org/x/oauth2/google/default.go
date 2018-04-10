@@ -87,12 +87,12 @@ func FindDefaultCredentials(ctx context.Context, scope ...string) (*DefaultCrede
 	}
 
 	// Third, if we're on Google App Engine use those credentials.
-	if appengineTokenFunc != nil && !appengineFlex {
-		return &DefaultCredentials{
-			ProjectID:   appengineAppIDFunc(ctx),
-			TokenSource: AppEngineTokenSource(ctx, scope...),
-		}, nil
-	}
+	//if appengineTokenFunc != nil && !appengineFlex {
+	//	return &DefaultCredentials{
+	//		ProjectID:   appengineAppIDFunc(ctx),
+	//		TokenSource: AppEngineTokenSource(ctx, scope...),
+	//	}, nil
+//	}
 
 	// Fourth, if we're on Google Compute Engine use the metadata server.
 	if metadata.OnGCE() {

@@ -4,9 +4,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/grafana/grafana/pkg/metrics/graphitebridge"
-	"github.com/grafana/grafana/pkg/setting"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/rkrikbaev/grafana/pkg/metrics/graphitebridge"
+	"github.com/rkrikbaev/grafana/pkg/setting"
 	ini "gopkg.in/ini.v1"
 )
 
